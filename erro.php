@@ -10,7 +10,12 @@
 
 	<style type="text/css">
 		body{
-			background-color: #CDCBCE;
+			background-image: url(img/fundo30.jpg);
+		}
+
+		#container{
+			background-color: rgba(220,220,220, 0.8);
+			width: 75%;
 		}
 	</style>
 </head>
@@ -19,11 +24,11 @@
 		include'conexao.php';
 		include'nav.php';
 	?>
-	<div class="container-fluid" align="center">
+	<div class="container-fluid" align="center" id="container">
 		<div class="col-sm-4 col-sm-offset-4 text-center" style="margin-top: 10%;">
 			<h2>Usuário ou senha incorretos!!</h2>
 				<a href="login.php" class="btn btn-default" role="button" style="color: #A313C5; font-size: 120%;">Tentar Novamente</a>
-				<a href="cadusuario.php">
+				<a href="formUsuario.php">
 					<button type="button" class="btn btn-lg btn-link" style="color: #A313C5;">
 						Ainda não possui um cadastro? Clique aqui!
 					</button>

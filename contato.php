@@ -14,7 +14,19 @@
 	</script>
 	<style type="text/css">
 		body{
-			background-color: #CDCBCE;
+			background-image: url('img/fundo30.jpg');
+		}
+
+		#container{
+			background-color: #DCDCDC;
+			width: 75%;
+			border-radius: 5% 5%;
+		}
+
+		#home:hover{
+			padding-right: 40px;
+			color: #5e17eb;
+			transition: color 1s; 
 		}
 	</style>
 </head>
@@ -22,34 +34,35 @@
 	<?php
 		session_start();
 		include 'conexao.php'; 
-		include 'nav.php';  
+		include 'navbar.php';  
 	?>
 	<center>
 		<br/>
-		<div class="card text-center" style="width: 30%;">
-			<div class="card-body">
-				<h2 style="padding: 1% 0; color: #5e17eb;"> Contato </h2>
-				<form name="formContato" method="post" action="insContato.php" enctype="multipart/form-data">
-					<img src="img/contato.svg" width="28%" height="45%">
-					<div class="form-group">
-						<input type="text" name="txtNomeContato" class="form-control" required id="nome" placeholder="Nome">
-					</div>
-					<div class="form-group">
-						<input type="email" name="txtEmailContato" class="form-control" required id="email" placeholder="E-mail">
-					</div>
-					<div class="form-group">
-						<input type="text" name="txtTelefoneContato" class="form-control" id="telefone" required="telefone" placeholder="Celular: (00) 00000-0000">
-					</div>
-					<div class="form-group">
-						<input type="text" name="txtAssuntoContato" class="form-control" required="assunto" placeholder="Assunto da mensagem">
-					</div>
-					<div class="form-group">
-						<textarea rows="5" class="form-control" name="txtMensagemContato" placeholder="Digite aqui sua mensagem" required id="mensagem" style="resize: none;"></textarea>
-					</div>
-					<button type="submit" class="btn btn-lg btn-default" style="background-color: #5e17eb; color: white;">Enviar</button>
-				</form>
+			<div class="card text-center" style="width: 40%; border-radius: 3% 3%">
+				<div class="card-body">
+					<h2> Contato </h2>
+					<p style="font-size: 120%">Insira a razão para o contato e tentaremos entrar em contato o quanto antes!</p>
+					<form name="formContato" method="post" action="insContato.php" enctype="multipart/form-data">
+						<img src="img/contato.svg" width="23%" height="35%">
+						<div class="form-group">
+							<input type="text" name="txtNomeContato" class="form-control" required id="nome" placeholder="Nome">
+						</div>
+						<div class="form-group">
+							<input type="email" name="txtEmailContato" class="form-control" required id="email" placeholder="E-mail">
+						</div>
+						<div class="form-group">
+							<input type="text" name="txtTelefoneContato" class="form-control" id="telefone" required="telefone" placeholder="Celular: (00) 00000-0000">
+						</div>
+						<div class="form-group">
+							<input type="text" name="txtAssuntoContato" class="form-control" required="assunto" placeholder="Assunto da mensagem">
+						</div>
+						<div class="form-group">
+							<textarea rows="5" class="form-control" name="txtMensagemContato" placeholder="Digite aqui sua mensagem" required id="mensagem" style="resize: none;"></textarea>
+						</div>
+						<button type="submit" class="btn btn-lg btn-default" style="background-color: #5e17eb; color: white;">Enviar</button>
+					</form>
+				</div>
 			</div>
-		</div>
 	</center>
 
 </body>

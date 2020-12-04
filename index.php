@@ -10,7 +10,19 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 	<style type="text/css">
 		body{
-			background-color: #CDCBCE;
+			background-image: url('img/fundo30.jpg');
+		}
+
+		#container{
+			background-color: rgba(220,220,220, 0.8);
+			width: 80%;
+			border-radius: 5% 5%;
+		}
+
+		#home:hover{
+			padding-right: 40px;
+			color: #5e17eb;
+			transition: color 1s; 
 		}
 	</style>
 </head>
@@ -18,29 +30,31 @@
 	<?php
 		session_start();
 		include 'conexao.php';
-		include 'nav.php';  
+		include 'navbar.php';  
 	?>
-
-	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" align="center">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/brasil.png" class="d-block w-20" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/eua.png" class="d-block w-20" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/logo.png" class="d-block w-20" alt="...">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+	<center>
+		<div id="container">
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" align="center">
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img src="img/brasil.png" class="d-block w-20" alt="...">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="img/eua.png" class="d-block w-20" alt="...">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="img/logo.png" class="d-block w-20" alt="...">
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+	</center>
 </body>
 </html>
