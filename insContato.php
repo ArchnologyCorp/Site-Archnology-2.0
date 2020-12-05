@@ -10,6 +10,7 @@
 
 	try{
 		$enviarMensagem = $cn->query("INSERT INTO Contato (cod_contato, nome_contato, email_contato, telefone_contato, assunto_contato, mensagem_contato) VALUES(default, '$nome', '$email', '$telefone', '$assunto', '$mensagem')");
+		header('location:sucesso.php');
 
 	} catch(PDOException $erro){
 		echo $erro -> getMessage();

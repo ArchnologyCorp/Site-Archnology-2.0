@@ -35,7 +35,7 @@
 
 		#container{
 			background-color: rgba(220,220,220, 0.8);
-			width: 75%;
+			width: 70%;
 			border-radius: 5% 5%;
 		}
 
@@ -68,12 +68,12 @@
 						</div>
 						<div class="form-group">
 							<label for="txtEmailSac"> E-mail </label>
-							<input type="email" class="form-control" name="txtEmailSac" id="txtEmail" placeholder="Digite o seu endereço de e-mail aqui" required>
+							<input type="email" class="form-control" name="txtEmailSac" id="txtEmailValidation" placeholder="Digite o seu endereço de e-mail aqui" required>
 							<div class="invalid-feedback"> Por favor,insira o e-mail corretamente.</div>
 						</div>
 						<div class="form-group">
 							<label for="txtComentarioSac"> Comentário </label>
-							<textarea rows="5" class="form-control" name="txtComentarioSac" style="resize: none;" placeholder="Digite aqui sua avaliação/crítica" id="txtComentario" required=""></textarea>
+							<textarea rows="5" class="form-control" name="txtComentarioSac" style="resize: none;" placeholder="Digite aqui sua avaliação/crítica" id="txtComentarioValidation" required=""></textarea>
 							<div class="invalid-feedback"> Por favor, insira o seu comentário.</div>
 						</div>
 						<button type="submit" class="btn btn-md btn-default" style="background-color: #5e17eb; color: white;">Enviar</button>
@@ -147,5 +147,6 @@
 			</div>
 		</center>
 	</div>
+	<?php include'footer.php'; ?>
 </body>
 </html>

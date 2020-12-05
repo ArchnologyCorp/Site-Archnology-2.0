@@ -54,8 +54,8 @@
 		include'navbar.php';  
 	?>
 	<center>
+		<br/>
 		<div id="container">
-			<br/>
 			<h1>Sobre a Empresa</h1>
 			<p id="txtHistoria">Foi criada no dia 06 de maio de 2020 por Cleber Rodrigues de Souza, com o intuito de suprir a necessidade de empresas e profissionais na área de tecnologia. Desde jovem, Cleber despertou uma preferência para tecnologia e viu seu futuro voltado nele. Ao passar do tempo, foi-se reunindo pessoas que começaram a demonstrar interesse pela mesma ideia.</p>
 			<div class="container-fluid">
@@ -86,11 +86,11 @@
 				</table>
 			</div>
 			<br/>
-			<center>
-				<h2> Mapa da Empresa </h2>
-				<p style="font-size: 120%"> Para marcar uma visita a empresa ou consultoria dos serviços, <a href="contato.php" style="color:#5e17eb">clique aqui.</a></p>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.322157794313!2d-46.730816785189305!3d-23.520912684703035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d371ec31%3A0x671c9325c275132e!2sETEC%20Professor%20Basilides%20de%20Godoy.!5e0!3m2!1spt-BR!2sbr!4v1607004415702!5m2!1spt-BR!2sbr" width="60%" height="600" frameborder="0" style="border:1px solid #5e17eb;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-		</center>
-	</div>
+			<h2> Mapa da Empresa </h2>
+			<p style="font-size: 120%"> Para marcar uma visita a empresa ou consultoria dos serviços, <a href="contato.php" style="color:#5e17eb">clique aqui.</a></p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.322157794313!2d-46.730816785189305!3d-23.520912684703035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d371ec31%3A0x671c9325c275132e!2sETEC%20Professor%20Basilides%20de%20Godoy.!5e0!3m2!1spt-BR!2sbr!4v1607004415702!5m2!1spt-BR!2sbr" width="60%" height="600" frameborder="0" style="border:1px solid #5e17eb;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+	</center>
+	<?php include 'footer.php';?>
 </body>
 </html>

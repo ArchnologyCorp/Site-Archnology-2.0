@@ -8,6 +8,7 @@
 
 	try{
 		$enviar = $cn -> query("INSERT INTO Sac VALUES(default, '$nome', '$email', '$comentario');");
+		header('location:sucesso.php');
 	} catch(PDOException $erro){
 		echo $erro -> getMessage();
 	}

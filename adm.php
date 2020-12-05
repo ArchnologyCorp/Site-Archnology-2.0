@@ -14,7 +14,7 @@
 
 		#container{
 			background-color: rgba(220,220,220, 0.8);
-			width: 90%;
+			width: 65%;
 			border-radius: 5% 5%;
 		}
 
@@ -28,23 +28,43 @@
 </head>
 <body>
 	<?php
+		session_start();
 		include 'navbar.php';  
 	?>
 	<br/>
 	<center>
 		<div id="container">
+			<br/>
 			<h1> Área Restrita</h1>
 			<p style="font-size: 120%"> Acesse os relatórios dos últimos comentários ou dos contatos. </p>
-			<div class="col" style="margin-left: 15%;">
-				<div class="row">
-					<a href=""><img src="img/agenda.png" width="250"></a>
-					<a href=""><img src="img/comentários.png" width="250"></a>
+			<div class="container">
+			  <div class="row align-items-start">
+			    <div class="col">
+			      <a href="agenda.php"><img src="img/agenda.png" width="200"></a>
+			    </div>
+			    <div class="col">
+			      <a href="comentarios.php"><img src="img/comentários.png" width="200"></a>
+			    </div>
+			  </div>
+			  <div class="row align-items-center">
+			    <div class="col">
+			      <h3> Agenda de Contatos</h3>
+			    </div>
+			    <div class="col">
+			     <h3> Comentários dos clientes</h3>
+			    </div>
+			  </div>
+			  <div class="col">
+				<div class="row-align-items-start">
+					<a href="registros.php"><img src="img/registro.png" width="200"></a>
 				</div>
-				<div class="row">
-					<h3> Agenda de Contatos</h3>
+				<div class="row-align-items-center">
+					<h3>Lista de Cadastros</h3>
 				</div>
 			</div>
+			</div>			
 		</div>
 	</center>
+	<?php include 'footer.php';?>
 </body>
 </html>

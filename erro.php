@@ -17,15 +17,20 @@
 			background-color: rgba(220,220,220, 0.8);
 			width: 75%;
 		}
+
+		#home:hover{
+			color: #5e17eb;
+			transition: color 1s; 
+		}
 	</style>
 </head>
 <body>
 	<?php  
 		include'conexao.php';
-		include'nav.php';
+		include'navbar.php';
 	?>
 	<div class="container-fluid" align="center" id="container">
-		<div class="col-sm-4 col-sm-offset-4 text-center" style="margin-top: 10%;">
+		<div class="col-sm-4 col-sm-offset-4 text-center" style="margin: 10% 0 10% 0; color: red;">
 			<h2>Usuário ou senha incorretos!!</h2>
 				<a href="login.php" class="btn btn-default" role="button" style="color: #A313C5; font-size: 120%;">Tentar Novamente</a>
 				<a href="formUsuario.php">
@@ -35,5 +40,6 @@
 				</a>			
 		</div>
 	</div>
+	<?php include 'footer.php';?>
 </body>
 </html>
